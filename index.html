@@ -49,44 +49,39 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li>
-            <a href="#hero" class="active"
-              ><i class="bi bi-house navicon"></i><span>Home</span></a
-            >
+            <a href="#hero" class="active">
+              <i class="bi bi-house navicon"></i><span>Home</span>
+            </a>
           </li>
           <li>
-            <a href="#about"
-              ><i class="bi bi-person navicon"></i><span>About</span></a
-            >
+            <a href="#about">
+              <i class="bi bi-person-circle navicon"></i><span>About</span>
+            </a>
           </li>
           <li>
-            <a href="#tools"
-              ><i class="bi bi-envelope navicon"></i><span>Tools</span></a
-            >
+            <a href="#tools">
+              <i class="bi bi-tools navicon"></i><span>Tools</span>
+            </a>
           </li>
           <li>
-            <a href="#resume"
-              ><i class="bi bi-file-earmark-text navicon"></i
-              ><span>Resume</span></a
-            >
+            <a href="#resume">
+              <i class="bi bi-file-person navicon"></i><span>Background</span>
+            </a>
           </li>
           <li>
-            <a href="#portfolio"
-              ><i class="bi bi-images navicon"></i
-              ><span>Project Experience</span></a
-            >
+            <a href="#portfolio">
+              <i class="bi bi-briefcase navicon"></i><span>Projects</span>
+            </a>
           </li>
           <li>
-            <a href="#services"
-              ><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a
-            >
+            <a href="#services">
+              <i class="bi bi-card-checklist navicon"></i><span>Services</span>
+            </a>
           </li>
-    
-
-
           <li>
-            <a href="#contact"
-              ><i class="bi bi-envelope navicon"></i><span>Contact</span></a
-            >
+            <a href="#contact">
+              <i class="bi bi-envelope-at navicon"></i><span>Contact</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -94,40 +89,259 @@
 
     <main class="main">
       <!-- Hero Section -->
-      <section id="hero" class="hero section light-background">
-        <img src="assets/img/hero-bg.jpg" alt="" />
 
-        <div class="container" data-aos="zoom-out">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="hero section"
+        style="
+          background: linear-gradient(
+              to bottom,
+              rgba(255, 255, 255, 0.9),
+              rgba(240, 240, 240, 1)
+            ),
+            url('assets/img/hero-bg.jpg') no-repeat center center/cover;
+          color: #222; /* Darker text for better readability */
+          text-align: center;
+          padding: 100px 20px;
+          position: relative;
+        "
+      >
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
           <div class="row justify-content-center">
             <div class="col-lg-9">
-              <h2>Thushan Vithana</h2>
-              <p>
+              <h2
+                style="
+                  font-size: 3rem;
+                  font-weight: bold;
+                  margin-bottom: 20px;
+                  color: transparent;
+                  background-image: linear-gradient(90deg, #0d47a1, #42a5f5);
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  animation: gradientAnimation 5s infinite ease-in-out;
+                  text-align: center;
+                "
+              >
+                <span style="display: block; animation: fadeIn 2s ease-in">
+                  ✨ Hello, World! ✨
+                </span>
+                <span style="display: block; animation: slideIn 3s ease-in-out">
+                  Welcome to the universe of
+                </span>
+                <span
+                  style="
+                    font-size: 1.5em;
+                    color: #1565c0;
+                    display: inline-block;
+                    animation: bounceIn 4s ease-in-out;
+                  "
+                >
+                  Thushan Vithana
+                </span>
+                <span style="display: block; animation: fadeIn 5s ease-in">
+                  🚀 Let’s build something incredible together.
+                </span>
+              </h2>
+
+              <!-- Add these CSS animations in your style tag or CSS file -->
+              <style>
+                @keyframes gradientAnimation {
+                  0% {
+                    background-position: 0% 50%;
+                  }
+                  50% {
+                    background-position: 100% 50%;
+                  }
+                  100% {
+                    background-position: 0% 50%;
+                  }
+                }
+
+                @keyframes fadeIn {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+
+                @keyframes slideIn {
+                  0% {
+                    transform: translateY(20px);
+                    opacity: 0;
+                  }
+                  100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                  }
+                }
+
+                @keyframes bounceIn {
+                  0% {
+                    transform: scale(0.8);
+                    opacity: 0;
+                  }
+                  50% {
+                    transform: scale(1.2);
+                    opacity: 1;
+                  }
+                  100% {
+                    transform: scale(1);
+                  }
+                }
+
+                @keyframes zoomIn {
+                  from {
+                    transform: scale(0.5);
+                    opacity: 0;
+                  }
+                  to {
+                    transform: scale(1);
+                    opacity: 1;
+                  }
+                }
+
+                @keyframes typewriter {
+                  from {
+                    width: 0;
+                  }
+                  to {
+                    width: 100%;
+                  }
+                }
+
+                /* Media Queries for Responsiveness */
+                @media (max-width: 768px) {
+                  /* Adjust font sizes for mobile devices */
+                  h2 {
+                    font-size: 2rem;
+                  }
+
+                  .social-links a {
+                    font-size: 1.5rem;
+                  }
+
+                  p {
+                    font-size: 1.2rem;
+                  }
+
+                  .container {
+                    padding: 0 15px;
+                  }
+
+                  .col-lg-9 {
+                    padding-left: 0;
+                    padding-right: 0;
+                  }
+
+                  /* Adjust padding for smaller screens */
+                  section#hero {
+                    padding: 80px 20px;
+                  }
+                }
+
+                @media (max-width: 480px) {
+                  h2 {
+                    font-size: 1.8rem;
+                  }
+
+                  .social-links a {
+                    font-size: 1.2rem;
+                  }
+
+                  p {
+                    font-size: 1rem;
+                  }
+
+                  section#hero {
+                    padding: 60px 20px;
+                  }
+
+                  .col-lg-9 {
+                    padding-left: 0;
+                    padding-right: 0;
+                  }
+                }
+              </style>
+
+              <p
+                style="
+                  font-size: 1.5rem;
+                  margin-bottom: 30px;
+                  color: #333; /* Updated color for better contrast */
+                "
+              >
                 I'm
                 <span
                   class="typed"
                   data-typed-items="Designer, Developer, Freelancer, Photographer"
+                  style="
+                    color: #0d47a1;
+                    animation: typewriter 3s steps(15) infinite;
+                  "
                   >Designer</span
-                ><span
-                  class="typed-cursor typed-cursor--blink"
-                  aria-hidden="true"
-                ></span>
+                >
               </p>
-              <div class="social-links">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/thushan-vithana-89256917b/"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-                <a href="https://thushanvithana-chi.vercel.app/"><i class="bi bi-youtube"></i></a>
-                <a href="https://github.com/thushanvithana"><i class="bi bi-github"></i></a>
-         
-               
+              <div
+                class="social-links"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  gap: 20px;
+                  flex-wrap: wrap;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    color: #0d47a1;
+                    font-size: 1.8rem;
+                    transition: transform 0.3s;
+                  "
+                  onmouseover="this.style.transform='scale(1.2)'"
+                  onmouseout="this.style.transform='scale(1)'"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/thushan-vithana-89256917b/"
+                  style="
+                    color: #0d47a1;
+                    font-size: 1.8rem;
+                    transition: transform 0.3s;
+                  "
+                  onmouseover="this.style.transform='scale(1.2)'"
+                  onmouseout="this.style.transform='scale(1)'"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="#"
+                  style="
+                    color: #0d47a1;
+                    font-size: 1.8rem;
+                    transition: transform 0.3s;
+                  "
+                  onmouseover="this.style.transform='scale(1.2)'"
+                  onmouseout="this.style.transform='scale(1)'"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a
+                  href="https://github.com/thushanvithana"
+                  style="
+                    color: #0d47a1;
+                    font-size: 1.8rem;
+                    transition: transform 0.3s;
+                  "
+                  onmouseover="this.style.transform='scale(1.2)'"
+                  onmouseout="this.style.transform='scale(1)'"
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Hero Section -->
 
       <!-- About Section -->
       <section id="about" class="about section">
@@ -156,8 +370,8 @@
                   border: 5px solid transparent;
                   border-radius: 50%;
                   transition: all 0.5s ease-in-out;
-                  width: 320px;
-                  height: 320px;
+                  width: 220px;
+                  height: 220px;
                   animation: pulse-border 2s infinite;
                 "
                 onmouseover="this.style.transform='scale(1.1)'; this.style.borderColor='#3498db';"
@@ -210,8 +424,8 @@
                       <i class="bi bi-chevron-right"></i>
                       <strong>Degree:</strong>
                       <span
-                        >Bachelor of Science (Hons) in Information Technology
-                        Specializing in Software Engineering</span
+                        >B.Sc (Hons) in Information Technology Specializing in
+                        Software Engineering</span
                       >
                     </li>
                   </ul>
@@ -259,11 +473,11 @@
               <div class="stats-item">
                 <span
                   data-purecounter-start="0"
-                  data-purecounter-end="232"
+                  data-purecounter-end="57"
                   data-purecounter-duration="1"
                   class="purecounter"
                 ></span>
-                <p>Happy Clients</p>
+                <p>Completed Projects</p>
               </div>
             </div>
             <!-- End Stats Item -->
@@ -275,11 +489,11 @@
               <div class="stats-item">
                 <span
                   data-purecounter-start="0"
-                  data-purecounter-end="1521"
+                  data-purecounter-end="34"
                   data-purecounter-duration="1"
                   class="purecounter"
                 ></span>
-                <p>Projects</p>
+                <p>Certifications Earned</p>
               </div>
             </div>
             <!-- End Stats Item -->
@@ -291,11 +505,11 @@
               <div class="stats-item">
                 <span
                   data-purecounter-start="0"
-                  data-purecounter-end="1463"
+                  data-purecounter-end="35040"
                   data-purecounter-duration="1"
                   class="purecounter"
                 ></span>
-                <p>Hours Of Support</p>
+                <p>Hours of Coding</p>
               </div>
             </div>
             <!-- End Stats Item -->
@@ -303,15 +517,15 @@
             <div
               class="col-lg-3 col-md-6 d-flex flex-column align-items-center"
             >
-              <i class="bi bi-people"></i>
+              <i class="bi bi-tools"></i>
               <div class="stats-item">
                 <span
                   data-purecounter-start="0"
-                  data-purecounter-end="15"
+                  data-purecounter-end="41"
                   data-purecounter-duration="1"
                   class="purecounter"
                 ></span>
-                <p>Hard Workers</p>
+                <p>Technologies Used</p>
               </div>
             </div>
             <!-- End Stats Item -->
@@ -325,138 +539,1009 @@
           <h2>Languages and Tools</h2>
           <p>A showcase of technologies and tools I have experience with.</p>
         </div>
-      
+
         <div class="carousel-container">
           <div class="carousel-track">
             <!-- Original Content -->
             <div class="carousel-slide">
               <img
-              src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-              alt="Python"
-              class="logo"
-            />
-            <img
-              src="https://w7.pngwing.com/pngs/917/862/png-transparent-java-programmer-computer-programming-logo-others-miscellaneous-text-logo-thumbnail.png"
-              alt="Java"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-              alt="C"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg"
-              alt="C#"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-              alt="Node.js"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-              alt="SQL"
-              class="logo"
-            />
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
 
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-              alt="Swift"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-              alt="PHP"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-              alt="Kotlin"
-              class="logo"
-            />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
 
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a6/TypeScript_Logo.svg"
-              alt="TypeScript"
-              class="logo"
-            />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
 
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-              alt="React"
-              class="logo"
-            />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
 
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Javascript-logo.png"
-              alt="JavaScript"
-              class="logo"
-            />
-          
-    
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-              alt="Python"
-              class="logo"
-            />
-            <img
-              src="https://w7.pngwing.com/pngs/917/862/png-transparent-java-programmer-computer-programming-logo-others-miscellaneous-text-logo-thumbnail.png"
-              alt="Java"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-              alt="C"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg"
-              alt="C#"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-              alt="Node.js"
-              class="logo"
-            />
-       
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-              alt="SQL"
-              class="logo"
-            />
-       
-  
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-              alt="Swift"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-              alt="PHP"
-              class="logo"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-              alt="Kotlin"
-              class="logo"
-            />
-         
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
             </div>
             <!-- Cloned Content -->
             <div class="carousel-slide">
               <!-- Repeating the same content for infinite scrolling -->
               <!-- Content omitted for brevity -->
             </div>
-
-            
           </div>
         </div>
       </section>
-      
+
       <style>
         /* Carousel Container */
         .carousel-container {
@@ -466,19 +1551,19 @@
           width: 100%;
           height: 150px; /* Adjust height as needed */
         }
-      
+
         /* Carousel Track */
         .carousel-track {
           display: flex;
           width: calc(200%); /* Double the width to include cloned content */
-          animation: scroll-infinite 20s linear infinite;
+          animation: scroll-infinite 120s linear infinite;
         }
-      
+
         /* Carousel Slide */
         .carousel-slide {
           display: flex;
         }
-      
+
         /* Carousel Images */
         .logo {
           width: 100px;
@@ -486,7 +1571,7 @@
           margin: 0 15px;
           object-fit: contain;
         }
-      
+
         /* Infinite Circular Scroll Animation */
         @keyframes scroll-infinite {
           0% {
@@ -496,7 +1581,7 @@
             transform: translateX(-100%);
           }
         }
-      
+
         /* Responsive Design */
         @media (max-width: 768px) {
           .logo {
@@ -505,14 +1590,12 @@
           }
         }
       </style>
-      
-      
 
       <!-- Resume Section -->
       <section id="resume" class="resume section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Resume</h2>
+          <h2>Background</h2>
           <p>
             I am a motivated undergraduate Software Engineering student with
             robust design and analytical skills. I enjoy working in a group and
@@ -545,7 +1628,6 @@
 
               <h3 class="resume-title">Education</h3>
 
-
               <div class="resume-item">
                 <h4>Advanced Level</h4>
                 <h5>2019</h5>
@@ -556,7 +1638,6 @@
                 </p>
               </div>
               <!-- End Resume Item -->
-
 
               <div class="resume-item">
                 <h4>B2 English Level (Upper-Intermediate)</h4>
@@ -578,45 +1659,43 @@
                 <p>Overall CGPA: 3.17 (Expected Graduation: March 2025)</p>
               </div>
               <!-- End Resume Item -->
-
-
-      
             </div>
 
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="resume-title">Experence</h3>
+              <h3 class="resume-title">Experience</h3>
               <div class="resume-item">
                 <h4>Voxitec</h4>
-                <h5>2023 - Present</h5>
+                <h6>May 2023 - Nov 2023</h6>
+                <em> <h5>Intern Full-Stack Developer</h5></em>
                 <ul>
                   <li>
-                    Focused on UI/UX using React Native supporting both Android
-                    and iOS.
+                    Worked with React.js, Node.js, and GSAP for front-end and
+                    back-end development.
                   </li>
                   <li>
-                    Integrated QR code scanning and growth chart visualization
-                    for small business operations.
+                    Focused on building and maintaining dynamic web applications
+                    for clients.
                   </li>
                 </ul>
               </div>
               <!-- End Resume Item -->
 
               <div class="resume-item">
-                <h4>one Billiontec</h4>
-                <h5>2023 - Present</h5>
-                <h5>Intern software enginer</h5>
+                <h4>One Billiontec</h4>
+                <h6>Dec 2023 - Jun 2024</h6>
+                <em> <h5>Intern Software Engineer</h5></em>
                 <ul>
                   <li>
-                    Developed a personalized 3D model feature using Three.js for
-                    virtual clothing trials.
+                    Developed applications using C# and .NET technologies.
+                  </li>
+                  <li>
+                    Worked with MS Power Apps to create and maintain business
+                    applications.
                   </li>
                 </ul>
               </div>
               <!-- End Resume Item -->
             </div>
-
-
-
           </div>
         </div>
       </section>
@@ -628,9 +1707,17 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Project Experience</h2>
           <p>
-            Throughout my academic journey, I have worked on a variety of software development projects, showcasing my skills in both mobile and web development. These projects span across multiple industries, including small business management, transportation, and e-commerce, allowing me to apply modern technologies such as React Native, MERN stack, Docker, and more. My experience includes designing intuitive user interfaces, building robust backend systems, and developing solutions to streamline business operations. I am passionate about leveraging technology to solve real-world problems and enhance user experiences.
+            Throughout my academic journey, I have worked on a variety of
+            software development projects, showcasing my skills in both mobile
+            and web development. These projects span across multiple industries,
+            including small business management, transportation, and e-commerce,
+            allowing me to apply modern technologies such as React Native, MERN
+            stack, Docker, and more. My experience includes designing intuitive
+            user interfaces, building robust backend systems, and developing
+            solutions to streamline business operations. I am passionate about
+            leveraging technology to solve real-world problems and enhance user
+            experiences.
           </p>
-          
         </div>
         <!-- End Section Title -->
 
@@ -667,7 +1754,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
+                  <h4>ART ZONE mobile application</h4>
                   <p>Lorem ipsum, dolor sit</p>
                   <a
                     href="https://i9.ytimg.com/vi/eMMsD80Jm-w/maxresdefault.jpg?v=637c92eb&sqp=CNjRv7oG&rs=AOn4CLC5oY0fZk_HGgjFFBrE_UrioG5LDA"
@@ -695,7 +1782,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Product 1</h4>
+                  <h4>Pharmacy prescription management system</h4>
                   <p>Lorem ipsum, dolor sit</p>
                   <a
                     href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
@@ -714,6 +1801,35 @@
               </div>
               <!-- End Portfolio Item -->
 
+
+              <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+            >
+              <img
+                src="https://i9.ytimg.com/vi/eMMsD80Jm-w/maxresdefault.jpg?v=637c92eb&sqp=CNjRv7oG&rs=AOn4CLC5oY0fZk_HGgjFFBrE_UrioG5LDA"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Vehicle Spare Parts Management System</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a
+                  href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+                  title="Product 1"
+                  data-gallery="portfolio-gallery-product"
+                  class="glightbox preview-link"
+                  ><i class="bi bi-zoom-in"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  title="More Details"
+                  class="details-link"
+                  ><i class="bi bi-link-45deg"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
               <div
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
               >
@@ -723,7 +1839,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Branding 1</h4>
+                  <h4>Calm Down Music Player</h4>
                   <p>Lorem ipsum, dolor sit</p>
                   <a
                     href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
@@ -751,7 +1867,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>App 2</h4>
+                  <h4>Simple Portfolio</h4>
                   <p>Lorem ipsum, dolor sit</p>
                   <a
                     href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
@@ -779,7 +1895,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Product 2</h4>
+                  <h4>JAVA mobile application 2</h4>
                   <p>Lorem ipsum, dolor sit</p>
                   <a
                     href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
@@ -807,7 +1923,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Branding 2</h4>
+                  <h4>CITIZEN Connect</h4>
                   <p>Lorem ipsum, dolor sit</p>
                   <a
                     href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
@@ -910,144 +2026,142 @@
               </div>
               <!-- End Portfolio Item -->
 
-
-
-
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding filter-app"
+              >
+                <img
+                  src="https://i9.ytimg.com/vi_webp/vBIJ7b47dFk/maxresdefault.webp?v=652a4164&sqp=CNjRv7oG&rs=AOn4CLD8rYMPBaQyxMf1_BxouwM1r8AJoA"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit</p>
+                  <a
+                    href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
 
               <div
-              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding filter-app"
-            >
-              <img
-                src="https://i9.ytimg.com/vi_webp/vBIJ7b47dFk/maxresdefault.webp?v=652a4164&sqp=CNjRv7oG&rs=AOn4CLD8rYMPBaQyxMf1_BxouwM1r8AJoA"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a
-                  href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-                  title="Branding 2"
-                  data-gallery="portfolio-gallery-branding"
-                  class="glightbox preview-link"
-                  ><i class="bi bi-zoom-in"></i
-                ></a>
-                <a
-                  href="portfolio-details.html"
-                  title="More Details"
-                  class="details-link"
-                  ><i class="bi bi-link-45deg"></i
-                ></a>
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="https://i9.ytimg.com/vi_webp/FPrKBLpybCM/maxresdefault.webp?v=6648c803&sqp=CNjRv7oG&rs=AOn4CLDz3OkMJeQV79I0J3sef4OOcMCbtQ"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit</p>
+                  <a
+                    href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div
-            class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-          >
-            <img
-              src="https://i9.ytimg.com/vi_webp/FPrKBLpybCM/maxresdefault.webp?v=6648c803&sqp=CNjRv7oG&rs=AOn4CLDz3OkMJeQV79I0J3sef4OOcMCbtQ"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="portfolio-info">
-              <h4>Branding 3</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a
-                href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-                title="Branding 2"
-                data-gallery="portfolio-gallery-branding"
-                class="glightbox preview-link"
-                ><i class="bi bi-zoom-in"></i
-              ></a>
-              <a
-                href="portfolio-details.html"
-                title="More Details"
-                class="details-link"
-                ><i class="bi bi-link-45deg"></i
-              ></a>
-            </div>
-          </div>
-          <!-- End Portfolio Item -->    <div
+              <!-- End Portfolio Item -->
+              <div
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-                >
-                  <img
-                    src="https://i9.ytimg.com/vi_webp/FPhrWGWrYbo/maxresdefault.webp?v=65bf380a&sqp=CNjRv7oG&rs=AOn4CLDcNsvRPF3RIHcoGkxbMtLROnEg8w"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Branding 3</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
+              >
+                <img
+                  src="https://i9.ytimg.com/vi_webp/FPhrWGWrYbo/maxresdefault.webp?v=65bf380a&sqp=CNjRv7oG&rs=AOn4CLDcNsvRPF3RIHcoGkxbMtLROnEg8w"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit</p>
+                  <a
+                    href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
-                <!-- End Portfolio Item -->    <div
+              </div>
+              <!-- End Portfolio Item -->
+              <div
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-                >
-                  <img
-                    src="https://i9.ytimg.com/vi_webp/Ew_vM8_o7cY/maxresdefault.webp?v=6648bd94&sqp=CNjRv7oG&rs=AOn4CLDe7Ix519NlzrqMibz7KD7w3n8gXg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Branding 3</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
+              >
+                <img
+                  src="https://i9.ytimg.com/vi_webp/Ew_vM8_o7cY/maxresdefault.webp?v=6648bd94&sqp=CNjRv7oG&rs=AOn4CLDe7Ix519NlzrqMibz7KD7w3n8gXg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit</p>
+                  <a
+                    href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
-                <!-- End Portfolio Item -->    <div
+              </div>
+              <!-- End Portfolio Item -->
+              <div
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-                >
-                  <img
-                    src="https://i9.ytimg.com/vi_webp/6TF8y-ZxPWo/maxresdefault.webp?v=664f1668&sqp=CNjRv7oG&rs=AOn4CLC-T40WmQK3m0QDIsFaOZ6mE87aSQ"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Branding 3</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
+              >
+                <img
+                  src="https://i9.ytimg.com/vi_webp/6TF8y-ZxPWo/maxresdefault.webp?v=664f1668&sqp=CNjRv7oG&rs=AOn4CLC-T40WmQK3m0QDIsFaOZ6mE87aSQ"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit</p>
+                  <a
+                    href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
-                <!-- End Portfolio Item -->   
-               
+              </div>
+              <!-- End Portfolio Item -->
             </div>
             <!-- End Portfolio Container -->
           </div>
@@ -1061,20 +2175,18 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Services</h2>
           <p>
-            As a software engineering student specializing in full-stack development, 
-            I offer innovative solutions across mobile, web, and emerging technologies. 
-            My services combine technical expertise with creative problem-solving to 
-            deliver cutting-edge digital solutions for businesses and individuals.
+            As a software engineering student specializing in full-stack
+            development, I offer innovative solutions across mobile, web, and
+            emerging technologies. My services combine technical expertise with
+            creative problem-solving to deliver cutting-edge digital solutions
+            for businesses and individuals.
           </p>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
-
-
-
-  <div
+            <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -1100,10 +2212,10 @@
                   <h3>Mobile App Development</h3>
                 </a>
                 <p>
-                  Specialized in cross-platform mobile app development using React Native, 
-                  creating versatile applications for Android and iOS. Experience in 
-                  developing solutions for small businesses, transportation management, 
-                  and e-commerce platforms.
+                  Specialized in cross-platform mobile app development using
+                  React Native, creating versatile applications for Android and
+                  iOS. Experience in developing solutions for small businesses,
+                  transportation management, and e-commerce platforms.
                 </p>
               </div>
             </div>
@@ -1135,9 +2247,10 @@
                   <h3>Web Development</h3>
                 </a>
                 <p>
-                  Full-stack web development using MERN stack (MongoDB, Express, React, Node.js), 
-                  NextJS, and other modern web technologies. Expertise in creating 
-                  responsive, scalable web applications for various business needs.
+                  Full-stack web development using MERN stack (MongoDB, Express,
+                  React, Node.js), NextJS, and other modern web technologies.
+                  Expertise in creating responsive, scalable web applications
+                  for various business needs.
                 </p>
               </div>
             </div>
@@ -1169,9 +2282,9 @@
                   <h3>UI/UX Design</h3>
                 </a>
                 <p>
-                  Proficient in UI/UX design using Figma, creating intuitive and 
-                  visually appealing interfaces. Experienced in designing mobile 
-                  and web application interfaces that enhance user experience 
+                  Proficient in UI/UX design using Figma, creating intuitive and
+                  visually appealing interfaces. Experienced in designing mobile
+                  and web application interfaces that enhance user experience
                   and meet business requirements.
                 </p>
               </div>
@@ -1204,9 +2317,10 @@
                   <h3>Cloud & DevOps</h3>
                 </a>
                 <p>
-                  Basic understanding of cloud computing and DevOps technologies. 
-                  Experience with Docker and Kubernetes for creating scalable, 
-                  efficient, and reliable application deployments.
+                  Basic understanding of cloud computing and DevOps
+                  technologies. Experience with Docker and Kubernetes for
+                  creating scalable, efficient, and reliable application
+                  deployments.
                 </p>
               </div>
             </div>
@@ -1238,9 +2352,10 @@
                   <h3>Emerging Technologies</h3>
                 </a>
                 <p>
-                  Exploring innovative technologies like 3D modeling, virtual try-on 
-                  solutions, and advanced web applications. Proficient in technologies 
-                  such as Three.js for creating interactive, immersive digital experiences.
+                  Exploring innovative technologies like 3D modeling, virtual
+                  try-on solutions, and advanced web applications. Proficient in
+                  technologies such as Three.js for creating interactive,
+                  immersive digital experiences.
                 </p>
               </div>
             </div>
@@ -1272,17 +2387,14 @@
                   <h3>Custom Software Solutions</h3>
                 </a>
                 <p>
-                  Developing tailored software solutions across multiple programming 
-                  languages and frameworks. Expertise in Java, Python
-                <a href="#" class="stretched-link"></a>
+                  Developing tailored software solutions across multiple
+                  programming languages and frameworks. Expertise in Java,
+                  Python
+                  <a href="#" class="stretched-link"></a>
+                </p>
               </div>
             </div>
             <!-- End Service Item -->
-
-
-
-
-
           </div>
         </div>
       </section>
@@ -1294,8 +2406,7 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Contact</h2>
           <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+            Feel free to reach out to me for any inquiries or opportunities.
           </p>
         </div>
         <!-- End Section Title -->
@@ -1311,7 +2422,7 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>43/D/2, 3rd Lane Gamunupura, Kothalawala, Kaduwela</p>
                 </div>
               </div>
               <!-- End Info Item -->
@@ -1337,7 +2448,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <p>thushan2271@gmail.com</p>
                 </div>
               </div>
               <!-- End Info Item -->
@@ -1429,7 +2540,7 @@
           <div class="copyright">
             <span>Copyright</span>
             <strong class="px-1 sitename">Thushan Vithana</strong>
-            <span>All Rights Reserved 2024</span>
+            <span>All Rights Reserved 2022</span>
           </div>
           <div class="credits">
             Designed by <a href="https://bootstrapmade.com/">Thushan Vithana</a>
