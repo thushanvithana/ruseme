@@ -88,7 +88,7 @@
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
+    
 
       <!-- Hero Section -->
       <section
@@ -97,11 +97,11 @@
         style="
           background: linear-gradient(
               to bottom,
-              rgba(255, 255, 255, 0.9),
-              rgba(240, 240, 240, 1)
+              rgba(204, 218, 241, 0),
+              rgba(138, 148, 177, 0)
             ),
             url('assets/img/hero-bg.jpg') no-repeat center center/cover;
-          color: #222; /* Darker text for better readability */
+         /* Darker text for better readability */
           text-align: center;
           padding: 100px 20px;
           position: relative;
@@ -110,6 +110,26 @@
         <div class="container" data-aos="fade-up" data-aos-duration="1500">
           <div class="row justify-content-center">
             <div class="col-lg-9">
+              <style>
+                @keyframes wave {
+                  0% {
+                    transform: rotate(0deg);
+                  }
+                  25% {
+                    transform: rotate(-15deg);
+                  }
+                  50% {
+                    transform: rotate(0deg);
+                  }
+                  75% {
+                    transform: rotate(15deg);
+                  }
+                  100% {
+                    transform: rotate(0deg);
+                  }
+                }
+              </style>
+
               <h2
                 style="
                   font-size: 3rem;
@@ -123,23 +143,33 @@
                   text-align: center;
                 "
               >
-                <span style="display: block; animation: fadeIn 2s ease-in">
-                  ✨ Hello, World! ✨
-                </span>
-                <span style="display: block; animation: slideIn 3s ease-in-out">
-                  Welcome to the universe of
-                </span>
                 <span
                   style="
                     font-size: 1.5em;
                     color: #1565c0;
                     display: inline-block;
-                    animation: bounceIn 4s ease-in-out;
+                    animation: bounceIn 1s ease-in-out;
                   "
                 >
+                  <span>
+                    Hi there
+                    <span
+                      class="wave-hand"
+                      style="
+                        display: inline-block;
+                        margin-left: 1px;
+                        animation: wave 2s infinite ease-in-out;
+                        transform-origin: 70% 70%;
+                        font-size: 1em;
+                      "
+                      >👋</span
+                    >
+                  </span>
+
+                  <span style="animation: fadeIn 1s ease-in"> I'm </span>
                   Thushan Vithana
                 </span>
-                <span style="display: block; animation: fadeIn 5s ease-in">
+                <span style="display: block; animation: fadeIn 4s ease-in">
                   🚀 Let’s build something incredible together.
                 </span>
               </h2>
@@ -329,7 +359,7 @@
                 <a
                   href="https://github.com/thushanvithana"
                   style="
-                    color: #0d47a1;
+                    color: #0563bb;
                     font-size: 1.8rem;
                     transition: transform 0.3s;
                   "
@@ -393,9 +423,64 @@
                 }
               }
             </style>
-
+            <style>
+              .content {
+                background: #f9f9f9;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                color: #333;
+              }
+              .content h2 {
+                font-size: 2rem;
+                color: #0563bb;
+                margin-bottom: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+              .content p.fst-italic {
+                font-style: italic;
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 20px;
+              }
+              .content ul {
+                list-style: none;
+                padding: 0;
+              }
+              .content ul li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+              }
+              .content ul li i {
+                font-size: 1.2rem;
+                color: #0563bb;
+                margin-right: 10px;
+              }
+              .content ul li strong {
+                font-weight: bold;
+                color: #555;
+                margin-right: 5px;
+              }
+              .content ul li span a {
+                color: #0563bb;
+                text-decoration: none;
+              }
+              .content ul li span a:hover {
+                text-decoration: underline;
+              }
+              .row {
+                margin-top: 20px;
+              }
+              .content p.py-3 {
+                font-size: 1rem;
+                line-height: 1.8;
+                color: #666;
+              }
+            </style>
             <div class="col-lg-8 content">
-              <h2>Software Engineering Undergraduate &amp; Developer</h2>
+              <h2>Software Engineering Undergraduate</h2>
               <p class="fst-italic py-3">
                 A motivated and innovative undergraduate with a passion for
                 technology, problem-solving, and continuous learning. My goal is
@@ -1749,7 +1834,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/j358Qa-3u6k/maxresdefault.webp?v=639ec4ec&sqp=CNjRv7oG&rs=AOn4CLCVzWGcJrReWXIBO9Zkf2zh_nlfew"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -1777,7 +1862,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
               >
                 <img
-                  src="https://i9.ytimg.com/vi/amh_Ua-F_6s/maxresdefault.jpg?v=638593b2&sqp=CNjRv7oG&rs=AOn4CLDxwSLGeUusqIlq2cW3CezhRgwDHA"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -1801,40 +1886,39 @@
               </div>
               <!-- End Portfolio Item -->
 
-
               <div
-              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-            >
-              <img
-                src="https://i9.ytimg.com/vi/eMMsD80Jm-w/maxresdefault.jpg?v=637c92eb&sqp=CNjRv7oG&rs=AOn4CLC5oY0fZk_HGgjFFBrE_UrioG5LDA"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-info">
-                <h4>Vehicle Spare Parts Management System</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a
-                  href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
-                  title="Product 1"
-                  data-gallery="portfolio-gallery-product"
-                  class="glightbox preview-link"
-                  ><i class="bi bi-zoom-in"></i
-                ></a>
-                <a
-                  href="portfolio-details.html"
-                  title="More Details"
-                  class="details-link"
-                  ><i class="bi bi-link-45deg"></i
-                ></a>
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img
+                  src="/assets//img/proj/maxresdefault.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Vehicle Spare Parts Management System</h4>
+                  <p>Lorem ipsum, dolor sit</p>
+                  <a
+                    href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
               </div>
-            </div>
-            <!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
               <div
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
               >
                 <img
-                  src="https://i9.ytimg.com/vi/_mejP4a2Ntc/maxresdefault.jpg?v=63a0c283&sqp=CNjRv7oG&rs=AOn4CLA1D1acOiQt8YviLEec35SDuP2R2g"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -1862,7 +1946,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
               >
                 <img
-                  src="https://i9.ytimg.com/vi/rhoMu2O-yXs/maxresdefault.jpg?v=639f72fa&sqp=CNjRv7oG&rs=AOn4CLC14ychLeO9n08AjjFe8rXL2pHRKg"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -1890,7 +1974,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/XxRaHY4Pe7s/maxresdefault.webp?v=63b870db&sqp=CNjRv7oG&rs=AOn4CLDiBC4jwCJZofI7OCedQtmVu4P-4A"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -1918,7 +2002,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/w0x3wktS5_0/maxresdefault.webp?v=640eb216&sqp=CNjRv7oG&rs=AOn4CLABkCZTB27S_e2_OR8otj2__iD2Pw"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -1946,7 +2030,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
               >
                 <img
-                  src="https://i9.ytimg.com/vi/MDQUHkyAGxQ/maxresdefault.jpg?v=646fc0dd&sqp=CNjRv7oG&rs=AOn4CLDSeGpKp-c71lC8RSVP4JVKgPMm8g"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -1974,7 +2058,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/VvTvYucKk1Y/maxresdefault.webp?v=64edbd9d&sqp=CNjRv7oG&rs=AOn4CLCkqO7p5u_7CVLh05USXMtMPQU5qw"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -2002,7 +2086,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/JehgY5VOh5c/maxresdefault.webp?v=6509cdcd&sqp=CNjRv7oG&rs=AOn4CLCBo8M21Dq2hUmPZ-jGnnTMyLgG3Q"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -2030,7 +2114,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding filter-app"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/vBIJ7b47dFk/maxresdefault.webp?v=652a4164&sqp=CNjRv7oG&rs=AOn4CLD8rYMPBaQyxMf1_BxouwM1r8AJoA"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -2058,7 +2142,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/FPrKBLpybCM/maxresdefault.webp?v=6648c803&sqp=CNjRv7oG&rs=AOn4CLDz3OkMJeQV79I0J3sef4OOcMCbtQ"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -2085,7 +2169,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/FPhrWGWrYbo/maxresdefault.webp?v=65bf380a&sqp=CNjRv7oG&rs=AOn4CLDcNsvRPF3RIHcoGkxbMtLROnEg8w"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -2112,7 +2196,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/Ew_vM8_o7cY/maxresdefault.webp?v=6648bd94&sqp=CNjRv7oG&rs=AOn4CLDe7Ix519NlzrqMibz7KD7w3n8gXg"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -2139,7 +2223,7 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
               >
                 <img
-                  src="https://i9.ytimg.com/vi_webp/6TF8y-ZxPWo/maxresdefault.webp?v=664f1668&sqp=CNjRv7oG&rs=AOn4CLC-T40WmQK3m0QDIsFaOZ6mE87aSQ"
+                  src="/assets//img/proj/maxresdefault.png"
                   class="img-fluid"
                   alt=""
                 />
