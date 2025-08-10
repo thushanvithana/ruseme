@@ -37,6 +37,9 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+    <!-- Add preload for critical resources -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
   </head>
 
   <body class="index-page">
@@ -53,21 +56,22 @@
               <i class="bi bi-house navicon"></i><span>Home</span>
             </a>
           </li>
-          <li>
+                <li>
+            <a href="#resume">
+              <i class="bi bi-file-person navicon"></i><span>Background</span>
+            </a>
+          </li>
+          <!-- <li>
             <a href="#about">
               <i class="bi bi-person-circle navicon"></i><span>About</span>
             </a>
-          </li>
+          </li> -->
           <li>
             <a href="#tools">
               <i class="bi bi-tools navicon"></i><span>Tools</span>
             </a>
           </li>
-          <li>
-            <a href="#resume">
-              <i class="bi bi-file-person navicon"></i><span>Background</span>
-            </a>
-          </li>
+    
           <li>
             <a href="#portfolio">
               <i class="bi bi-briefcase navicon"></i><span>Projects</span>
@@ -455,86 +459,7 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
 
-<div class="col-lg-12 content">
-<h2 class="animate__animated animate__fadeIn">Highlight Projects</h2>
 
-<!-- Highlighted Section for Standout Project -->
-<div class="highlighted-section animate__animated animate__fadeInUp animate__delay-1s">
-  <p class="py-3">
-    One of my standout projects is a
-    <strong>Scholarship Requester Mobile App</strong>, developed using
-    <span class="tech-highlight">React Native</span> for the frontend and
-    <span class="tech-highlight">.NET</span> for the backend. This app
-    streamlines the process of requesting and managing scholarships,
-    providing an intuitive user experience and robust functionality. Check
-    out the project demo on YouTube below:
-  </p>
-</div>
-
-<!-- YouTube Thumbnail and Google Play Button -->
-<div class="row py-3">
-  <div class="col-lg-6">
-   
-
-    <p class="text-center pt-2 animate__animated animate__fadeIn animate__delay-3s">
-      <a
-        href="https://play.google.com/store/apps/details?id=com.thusha2271.scholarships&hl=en"
-        target="_blank"
-        class="btn btn-outline-primary btn-sm"
-      >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-          alt="Get it on Google Play"
-          style="height: 20px; vertical-align: middle; margin-right: 8px;"
-        />
-        Get it on Google Play
-      </a>
-    </p>
-  </div>
-</div>
-
-<p class="animate__animated animate__fadeInUp animate__delay-1s">
-  I’ve also worked on diverse projects ranging from mobile app development to
-  web platforms using advanced frameworks like
-  <span class="tech-highlight">React</span>,
-  <span class="tech-highlight">MERN stack</span>, and
-  <span class="tech-highlight">Docker</span>. My approach to solving
-  challenges involves a mix of creativity, teamwork, and a growth mindset. I
-  strive to keep learning new technologies and apply them effectively to
-  deliver high-quality solutions.
-</p>
-
-<!-- Project Photos Section -->
-<div class="row py-3">
-  <div class="col-lg-4 animate__animated animate__slideInLeft animate__delay-2s">
-    <img
-      src="https://play-lh.googleusercontent.com/02RW6hhe1A8Oh0GWj0R_BXDUUdJNKqsHBPFMUcK5oVh5KBlV-HQtS5jmj2DdBcNYPg=w2560-h1440-rw"
-      class="img-fluid screenshot"
-      alt="Scholarship App Screenshot 1"
-        style=" border-radius: 25px;"
-    />
-    <p class="text-center">App Home Screen</p>
-  </div>
-  <div class="col-lg-4 animate__animated animate__slideInUp animate__delay-3s">
-    <img
-      src="https://play-lh.googleusercontent.com/oj2_aPGcYRsPAjLWHH5CBUGTHQiafXaCIEgYUpRxBO6GlIA7etrsg9qEx2OPmIMo16uF=w2560-h1440-rw"
-      class="img-fluid screenshot"
-      alt="Scholarship App Screenshot 2"
-      style=" border-radius: 25px;"
-    />
-    <p class="text-center">Request Form</p>
-  </div>
-  <div class="col-lg-4 animate__animated animate__slideInRight animate__delay-2s">
-    <img
-      src="https://play-lh.googleusercontent.com/LwAQxgTM9EQTxle3l032zxqyHVaPPO7wTzTA20dGUgNjxlkZcPswkyeyTZmgN5HatMA_=w2560-h1440-rw"
-      class="img-fluid screenshot"
-      alt="Scholarship App Screenshot 3"
-        style=" border-radius: 25px;"
-    />
-    <p class="text-center">Profile Dashboard</p>
-  </div>
-</div>
-</div>
 
 <!-- Custom CSS for Animations and Highlighted Section -->
 <style>
@@ -743,6 +668,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div>
       </section>
       <!-- /Resume Section -->
+
+      
       <!-- Stats Section -->
       <section id="stats" class="stats section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1077,6 +1004,48 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 class="logo"
               />
               <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
                 src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
                 alt="postman"
                 width="45"
@@ -1148,14 +1117,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-                alt="Kotlin"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                alt="React"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
                 class="logo"
               />
               <img
@@ -1169,7 +1132,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 alt="Node.js"
                 class="logo"
               />
-
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
@@ -1189,6 +1151,114 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/android-studio--v2.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+              <img
+                src="https://img.icons8.com/color/250/000000/tomcat.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/visual-studio.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/jetbrains.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/github.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/arduino.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+              <img
+                src="https://img.icons8.com/color/250/000000/adobe-after-effects--v1.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+              <img
+                src="https://img.icons8.com/color/250/000000/adobe-lightroom--v1.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+              />
+
+              <img
+                src="https://img.icons8.com/color/248/000000/visual-studio-code-2019.png"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
@@ -1228,7 +1298,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 alt="Kotlin"
                 class="logo"
               />
-
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
@@ -1245,7 +1314,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 alt="Node.js"
                 class="logo"
               />
-
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
@@ -1268,209 +1336,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                alt="Python"
+                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                alt="Node.js"
+                src="https://img.icons8.com/color/248/000000/android-studio--v2.png"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-                alt="SQL"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-                alt="Swift"
+                src="https://img.icons8.com/color/250/000000/tomcat.png"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-                alt="PHP"
+                src="https://img.icons8.com/color/248/000000/visual-studio.png"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-                alt="Kotlin"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                alt="React"
+                src="https://img.icons8.com/color/248/000000/jetbrains.png"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                alt="Node.js"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-                alt="SQL"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-                alt="Swift"
+                src="https://img.icons8.com/color/248/000000/github.png"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-                alt="PHP"
+                src="https://img.icons8.com/color/248/000000/arduino.png"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-                alt="Kotlin"
+                src="https://img.icons8.com/color/250/000000/adobe-after-effects--v1.png"
+                alt="postman"
+                width="45"
+                height="45"
                 class="logo"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                alt="Python"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                alt="Node.js"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-                alt="SQL"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-                alt="Swift"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-                alt="PHP"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-                alt="Kotlin"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                alt="React"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                alt="Node.js"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-                alt="SQL"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-                alt="Swift"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-                alt="PHP"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-                alt="Kotlin"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                alt="Python"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                alt="Node.js"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-                alt="SQL"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-                alt="Swift"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-                alt="PHP"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-                alt="Kotlin"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                alt="React"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                alt="Node.js"
+                src="https://img.icons8.com/color/250/000000/adobe-lightroom--v1.png"
+                alt="postman"
+                width="45"
                 class="logo"
               />
 
@@ -2094,18 +2018,87 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Project Experience</h2>
-          <p>
-            Throughout my academic journey, I have worked on a variety of
-            software development projects, showcasing my skills in both mobile
-            and web development. These projects span across multiple industries,
-            including small business management, transportation, and e-commerce,
-            allowing me to apply modern technologies such as React Native, MERN
-            stack, Docker, and more. My experience includes designing intuitive
-            user interfaces, building robust backend systems, and developing
-            solutions to streamline business operations. I am passionate about
-            leveraging technology to solve real-world problems and enhance user
-            experiences.
-          </p>
+          <div class="section-title-divider"></div>
+<!-- <h2 class="animate__animated animate__fadeIn">Highlight Projects</h2> -->
+
+<!-- Highlighted Section for Standout Project -->
+<div class="highlighted-section animate__animated animate__fadeInUp animate__delay-1s">
+  <p class="py-3">
+    One of my standout projects is a
+    <strong>Scholarship Requester Mobile App</strong>, developed using
+    <span class="tech-highlight">React Native</span> for the frontend and
+    <span class="tech-highlight">.NET</span> for the backend. This app
+    streamlines the process of requesting and managing scholarships,
+    providing an intuitive user experience and robust functionality. Check
+    out the project demo on YouTube below:
+  </p>
+</div>
+
+<!-- YouTube Thumbnail and Google Play Button -->
+<div class="row py-3">
+  <div class="col-lg-6">
+   
+
+    <p class="text-center pt-2 animate__animated animate__fadeIn animate__delay-3s">
+      <a
+        href="https://play.google.com/store/apps/details?id=com.thusha2271.scholarships&hl=en"
+        target="_blank"
+        class="btn btn-outline-primary btn-sm"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Get it on Google Play"
+          style="height: 20px; vertical-align: middle; margin-right: 8px;"
+        />
+        Get it on Google Play
+      </a>
+    </p>
+  </div>
+</div>
+
+<p class="animate__animated animate__fadeInUp animate__delay-1s">
+  I’ve also worked on diverse projects ranging from mobile app development to
+  web platforms using advanced frameworks like
+  <span class="tech-highlight">React</span>,
+  <span class="tech-highlight">MERN stack</span>, and
+  <span class="tech-highlight">Docker</span>. My approach to solving
+  challenges involves a mix of creativity, teamwork, and a growth mindset. I
+  strive to keep learning new technologies and apply them effectively to
+  deliver high-quality solutions.
+</p>
+
+<!-- Project Photos Section -->
+<div class="row py-3">
+  <div class="col-lg-4 animate__animated animate__slideInLeft animate__delay-2s">
+    <img
+      src="https://play-lh.googleusercontent.com/02RW6hhe1A8Oh0GWj0R_BXDUUdJNKqsHBPFMUcK5oVh5KBlV-HQtS5jmj2DdBcNYPg=w2560-h1440-rw"
+      class="img-fluid screenshot"
+      alt="Scholarship App Screenshot 1"
+        style=" border-radius: 25px;"
+    />
+    <p class="text-center">App Home Screen</p>
+  </div>
+  <div class="col-lg-4 animate__animated animate__slideInUp animate__delay-3s">
+    <img
+      src="https://play-lh.googleusercontent.com/oj2_aPGcYRsPAjLWHH5CBUGTHQiafXaCIEgYUpRxBO6GlIA7etrsg9qEx2OPmIMo16uF=w2560-h1440-rw"
+      class="img-fluid screenshot"
+      alt="Scholarship App Screenshot 2"
+      style=" border-radius: 25px;"
+    />
+    <p class="text-center">Request Form</p>
+  </div>
+  <div class="col-lg-4 animate__animated animate__slideInRight animate__delay-2s">
+    <img
+      src="https://play-lh.googleusercontent.com/LwAQxgTM9EQTxle3l032zxqyHVaPPO7wTzTA20dGUgNjxlkZcPswkyeyTZmgN5HatMA_=w2560-h1440-rw"
+      class="img-fluid screenshot"
+      alt="Scholarship App Screenshot 3"
+        style=" border-radius: 25px;"
+    />
+    <p class="text-center">Profile Dashboard</p>
+  </div>
+</div>
+</div>
+
         </div>
         <!-- End Section Title -->
 
@@ -2116,6 +2109,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             data-layout="masonry"
             data-sort="original-order"
           >
+          
             <ul
               class="portfolio-filters isotope-filters"
               data-aos="fade-up"
