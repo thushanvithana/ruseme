@@ -3,9 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Thushan Vithana</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <title>Thushan Vithana - Software Engineer | SLIIT Graduate | Full Stack Developer</title>
+    <meta content="Thushan Vithana is a talented Software Engineer and SLIIT graduate specializing in full-stack development, mobile applications, and modern web technologies. Expert in React Native, .NET, Java, and cloud solutions." name="description" />
+    <meta content="Thushan Vithana, Software Engineer, SLIIT, Full Stack Developer, React Native, .NET Developer, Mobile App Development, Web Development, Java Developer, Cloud Solutions, Sri Lanka Developer" name="keywords" />
+    <meta name="author" content="Thushan Vithana" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://thushanvithana.github.io/ruseme/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/ruseme/sitemap.xml" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thushanvithana.github.io/ruseme/" />
+    <meta property="og:title" content="Thushan Vithana - Software Engineer | SLIIT Graduate" />
+    <meta property="og:description" content="Professional portfolio of Thushan Vithana, a Software Engineer from SLIIT specializing in full-stack development, mobile applications, and modern web technologies." />
+    <meta property="og:image" content="https://thushanvithana.github.io/ruseme/assets/img/profile-img.jpg" />
+    <meta property="og:site_name" content="Thushan Vithana Portfolio" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://thushanvithana.github.io/ruseme/" />
+    <meta property="twitter:title" content="Thushan Vithana - Software Engineer | SLIIT Graduate" />
+    <meta property="twitter:description" content="Professional portfolio of Thushan Vithana, a Software Engineer from SLIIT specializing in full-stack development, mobile applications, and modern web technologies." />
+    <meta property="twitter:image" content="https://thushanvithana.github.io/ruseme/assets/img/profile-img.jpg" />
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="msapplication-TileColor" content="#3b82f6" />
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
@@ -39,52 +62,109 @@
     <link href="assets/css/main.css" rel="stylesheet" />
     <!-- Add preload for critical resources -->
     <link rel="preload" href="assets/css/main.css" as="style">
-    <link rel="preload" href="assets/js/main.js" as="script">
+
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://img.icons8.com">
+    <link rel="dns-prefetch" href="https://upload.wikimedia.org">
+    <link rel="dns-prefetch" href="https://www.vectorlogo.zone">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Thushan Vithana",
+      "jobTitle": "Software Engineer",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Sri Lanka Institute of Information Technology (SLIIT)",
+        "sameAs": "https://www.sliit.lk/"
+      },
+      "url": "https://thushanvithana.github.io/ruseme/",
+      "image": "https://thushanvithana.github.io/ruseme/assets/img/profile-img.jpg",
+      "description": "Software Engineer and SLIIT graduate specializing in full-stack development, mobile applications, and modern web technologies.",
+      "knowsAbout": ["Software Engineering", "Full Stack Development", "Mobile App Development", "React Native", ".NET", "Java", "Cloud Solutions", "Web Development"],
+      "sameAs": [
+        "https://www.linkedin.com/in/thushan-vithana-89256917b/",
+        "https://github.com/thushanvithana",
+        "https://www.youtube.com/@ThushanVithana"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Software Development Professional"
+      }
+    }
+    </script>
   </head>
 
   <body class="index-page">
-    <header
-      id="header"
-      class="header d-flex flex-column justify-content-center"
-    >
-      <i class="header-toggle d-xl-none bi bi-list"></i>
+    <!-- Header Controls (Dark Mode & Menu Toggle) -->
+    <div class="header-controls">
+      <button class="liquid-glass-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="bi bi-sun-fill"></i>
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
+      <button class="liquid-glass-btn header-toggle d-lg-none" id="menuToggle" aria-label="Toggle menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
 
+    <header id="header" class="header d-flex flex-column">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="assets/img/profile-img.jpg" alt="Thushan Vithana" class="profile-img">
+        <h1 class="profile-name">Thushan Vithana</h1>
+        <p class="profile-title">Software Engineer</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/thushan-vithana-89256917b/" target="_blank" aria-label="LinkedIn" class="social-link">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/thushanvithana" target="_blank" aria-label="GitHub" class="social-link">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.youtube.com/@ThushanVithana" target="_blank" aria-label="YouTube" class="social-link">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li>
-            <a href="#hero" class="active">
-              <i class="bi bi-house navicon"></i><span>Home</span>
-            </a>
-          </li>
-                <li>
-            <a href="#resume">
-              <i class="bi bi-file-person navicon"></i><span>Background</span>
-            </a>
-          </li>
-          <!-- <li>
-            <a href="#about">
-              <i class="bi bi-person-circle navicon"></i><span>About</span>
-            </a>
-          </li> -->
-          <li>
-            <a href="#tools">
-              <i class="bi bi-tools navicon"></i><span>Tools</span>
-            </a>
-          </li>
-    
-          <li>
-            <a href="#portfolio">
-              <i class="bi bi-briefcase navicon"></i><span>Projects</span>
+            <a href="#hero" class="nav-link active">
+              <i class="bi bi-house-door-fill"></i>
+              <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="#services">
-              <i class="bi bi-card-checklist navicon"></i><span>Services</span>
+            <a href="#resume" class="nav-link">
+              <i class="bi bi-person-lines-fill"></i>
+              <span>Background</span>
             </a>
           </li>
           <li>
-            <a href="#contact">
-              <i class="bi bi-envelope-at navicon"></i><span>Contact</span>
+            <a href="#tools" class="nav-link">
+              <i class="bi bi-gear-fill"></i>
+              <span>Tools</span>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio" class="nav-link">
+              <i class="bi bi-grid-3x3-gap-fill"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="nav-link">
+              <i class="bi bi-laptop-fill"></i>
+              <span>Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">
+              <i class="bi bi-envelope-fill"></i>
+              <span>Contact</span>
             </a>
           </li>
         </ul>
@@ -92,283 +172,57 @@
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
-      <section
-        id="hero"
-        class="hero section"
-        style="
-          background: linear-gradient(
-              to bottom,
-              rgba(204, 218, 241, 0),
-              rgba(138, 148, 177, 0)
-            ),
-            url('assets/img/hero-bg.jpg') no-repeat center center/cover;
-          /* Darker text for better readability */
-          text-align: center;
-          padding: 100px 20px;
-          position: relative;
-        "
-      >
-        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+      <!-- Hero Section - Liquid Glass Design -->
+      <section id="hero" class="hero section">
+        <!-- Background Image -->
+        <img src="assets/img/hero-bg.jpg" alt="" class="hero-bg-img" data-aos="fade-in">
+
+        <!-- Liquid Glass Content Card -->
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
           <div class="row justify-content-center">
-            <div class="col-lg-9">
-              <style>
-                @keyframes wave {
-                  0% {
-                    transform: rotate(0deg);
-                  }
-                  25% {
-                    transform: rotate(-15deg);
-                  }
-                  50% {
-                    transform: rotate(0deg);
-                  }
-                  75% {
-                    transform: rotate(15deg);
-                  }
-                  100% {
-                    transform: rotate(0deg);
-                  }
-                }
-              </style>
+            <div class="col-lg-10">
+              <div class="hero-glass-wrapper">
 
-              <h2
-                style="
-                  font-size: 3rem;
-                  font-weight: bold;
-                  margin-bottom: 20px;
-                  color: transparent;
-                  background-image: linear-gradient(90deg, #0d47a1, #42a5f5);
-                  background-clip: text;
-                  -webkit-background-clip: text;
-                  animation: gradientAnimation 5s infinite ease-in-out;
-                  text-align: center;
-                "
-              >
-                <span
-                  style="
-                    font-size: 1.5em;
-                    color: #1565c0;
-                    display: inline-block;
-                    animation: bounceIn 1s ease-in-out;
-                  "
-                >
-                  <span>
-                    Hi there
+                <!-- Main Title -->
+                <h2 class="hero-title">
+                  Hi there <span class="wave-hand">👋</span><br>
+                  I'm <span class="hero-name">Thushan Vithana</span>
+                </h2>
+
+                <!-- Subtitle with Rocket -->
+                <p class="hero-tagline">
+                  <span class="hero-rocket">🚀</span> Let's build something incredible together.
+                </p>
+
+                <!-- Typed Subtitle -->
+                <div class="hero-subtitle-container">
+                  <p class="hero-subtitle">
+                    I'm
                     <span
-                      class="wave-hand"
-                      style="
-                        display: inline-block;
-                        margin-left: 1px;
-                        animation: wave 2s infinite ease-in-out;
-                        transform-origin: 70% 70%;
-                        font-size: 1em;
-                      "
-                      >👋</span
-                    >
-                  </span>
+                      class="typed hero-typed-text"
+                      data-typed-items="Designer, Developer, Software Engineer, UI/UX Designer, Team Player, Innovator, Photographer"
+                    >Designer</span>
+                  </p>
+                </div>
 
-                  <span style="animation: fadeIn 1s ease-in"> I'm </span>
-                  Thushan Vithana
-                </span>
-                <span style="display: block; animation: fadeIn 4s ease-in">
-                  🚀 Let’s build something incredible together.
-                </span>
-              </h2>
+                <!-- Social Links -->
+                <div class="hero-social-wrapper">
+                  <div class="hero-social-links">
+                    <a href="https://github.com/thushanvithana" class="hero-social-btn" aria-label="GitHub" target="_blank">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thushan-vithana-89256917b/" class="hero-social-btn" aria-label="LinkedIn" target="_blank">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ThushanVithana" class="hero-social-btn" aria-label="YouTube" target="_blank">
+                      <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="#" class="hero-social-btn" aria-label="Instagram" target="_blank">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </div>
+                </div>
 
-              <!-- Add these CSS animations in your style tag or CSS file -->
-              <style>
-                @keyframes gradientAnimation {
-                  0% {
-                    background-position: 0% 50%;
-                  }
-                  50% {
-                    background-position: 100% 50%;
-                  }
-                  100% {
-                    background-position: 0% 50%;
-                  }
-                }
-
-                @keyframes fadeIn {
-                  0% {
-                    opacity: 0;
-                  }
-                  100% {
-                    opacity: 1;
-                  }
-                }
-
-                @keyframes slideIn {
-                  0% {
-                    transform: translateY(20px);
-                    opacity: 0;
-                  }
-                  100% {
-                    transform: translateY(0);
-                    opacity: 1;
-                  }
-                }
-
-                @keyframes bounceIn {
-                  0% {
-                    transform: scale(0.8);
-                    opacity: 0;
-                  }
-                  50% {
-                    transform: scale(1.2);
-                    opacity: 1;
-                  }
-                  100% {
-                    transform: scale(1);
-                  }
-                }
-
-                @keyframes zoomIn {
-                  from {
-                    transform: scale(0.5);
-                    opacity: 0;
-                  }
-                  to {
-                    transform: scale(1);
-                    opacity: 1;
-                  }
-                }
-
-                @keyframes typewriter {
-                  from {
-                    width: 0;
-                  }
-                  to {
-                    width: 100%;
-                  }
-                }
-
-                /* Media Queries for Responsiveness */
-                @media (max-width: 768px) {
-                  /* Adjust font sizes for mobile devices */
-                  h2 {
-                    font-size: 2rem;
-                  }
-
-                  .social-links a {
-                    font-size: 1.5rem;
-                  }
-
-                  p {
-                    font-size: 1.2rem;
-                  }
-
-                  .container {
-                    padding: 0 15px;
-                  }
-
-                  .col-lg-9 {
-                    padding-left: 0;
-                    padding-right: 0;
-                  }
-
-                  /* Adjust padding for smaller screens */
-                  section#hero {
-                    padding: 80px 20px;
-                  }
-                }
-
-                @media (max-width: 480px) {
-                  h2 {
-                    font-size: 1.8rem;
-                  }
-
-                  .social-links a {
-                    font-size: 1.2rem;
-                  }
-
-                  p {
-                    font-size: 1rem;
-                  }
-
-                  section#hero {
-                    padding: 60px 20px;
-                  }
-
-                  .col-lg-9 {
-                    padding-left: 0;
-                    padding-right: 0;
-                  }
-                }
-              </style>
-
-              <p
-                style="
-                  font-size: 1.5rem;
-                  margin-bottom: 30px;
-                  color: #333; /* Updated color for better contrast */
-                "
-              >
-                I'm
-                <span
-                  class="typed"
-                  data-typed-items="Designer, Developer, Software Engineer, UI/UX Designer, Team Player, Innovator, Photographer"
-                  style="
-                    color: #0d47a1;
-                    animation: typewriter 5s steps(15) infinite;
-                  "
-                  >Designer</span
-                >
-              </p>
-              <div
-                class="social-links"
-                style="
-                  display: flex;
-                  justify-content: center;
-                  gap: 20px;
-                  flex-wrap: wrap;
-                "
-              >
-                <a
-                  href="#"
-                  style="
-                    color: #0d47a1;
-                    font-size: 1.8rem;
-                    transition: transform 0.3s;
-                  "
-                  onmouseover="this.style.transform='scale(1.2)'"
-                  onmouseout="this.style.transform='scale(1)'"
-                  ><i class="bi bi-instagram"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/thushan-vithana-89256917b/"
-                  style="
-                    color: #0d47a1;
-                    font-size: 1.8rem;
-                    transition: transform 0.3s;
-                  "
-                  onmouseover="this.style.transform='scale(1.2)'"
-                  onmouseout="this.style.transform='scale(1)'"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
-                <a
-                  href="https://www.youtube.com/@ThushanVithana"
-                  style="
-                    color: #0d47a1;
-                    font-size: 1.8rem;
-                    transition: transform 0.3s;
-                  "
-                  onmouseover="this.style.transform='scale(1.2)'"
-                  onmouseout="this.style.transform='scale(1)'"
-                  ><i class="bi bi-youtube"></i
-                ></a>
-                <a
-                  href="https://github.com/thushanvithana"
-                  style="
-                    color: #0563bb;
-                    font-size: 1.8rem;
-                    transition: transform 0.3s;
-                  "
-                  onmouseover="this.style.transform='scale(1.2)'"
-                  onmouseout="this.style.transform='scale(1)'"
-                  ><i class="bi bi-github"></i
-                ></a>
               </div>
             </div>
           </div>
@@ -377,140 +231,8 @@
 
       <!-- About Section -->
       <section id="about" class="about section">
-   
-
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4 justify-content-center">
-           
-
-            <!-- Add this style block or move it to a separate CSS file -->
-            <style>
-              @keyframes pulse-border {
-                0% {
-                  box-shadow: 0 0 10px #3498db;
-                }
-                50% {
-                  box-shadow: 0 0 20px #3498db;
-                }
-                100% {
-                  box-shadow: 0 0 10px #3498db;
-                }
-              }
-            </style>
-            <style>
-              .content {
-                background: #f9f9f9;
-                padding: 30px;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                color: #333;
-              }
-              .content h2 {
-                font-size: 2rem;
-                color: #0563bb;
-                margin-bottom: 20px;
-                font-weight: bold;
-                text-transform: uppercase;
-              }
-              .content p.fst-italic {
-                font-style: italic;
-                font-size: 1.1rem;
-                line-height: 1.6;
-                margin-bottom: 20px;
-              }
-              .content ul {
-                list-style: none;
-                padding: 0;
-              }
-              .content ul li {
-                display: flex;
-                align-items: center;
-                margin-bottom: 15px;
-              }
-              .content ul li i {
-                font-size: 1.2rem;
-                color: #0563bb;
-                margin-right: 10px;
-              }
-              .content ul li strong {
-                font-weight: bold;
-                color: #555;
-                margin-right: 5px;
-              }
-              .content ul li span a {
-                color: #0563bb;
-                text-decoration: none;
-              }
-              .content ul li span a:hover {
-                text-decoration: underline;
-              }
-              .row {
-                margin-top: 20px;
-              }
-              .content p.py-3 {
-                font-size: 1rem;
-                line-height: 1.8;
-                color: #666;
-              }
-            </style>
-          <!-- Add Animate.css CDN for pre-built animations -->
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-
-
-
-<!-- Custom CSS for Animations and Highlighted Section -->
-<style>
-/* Highlighted Section Styling */
-.highlighted-section {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-/* Tech Highlight Styling */
-.tech-highlight {
-  background-color: #007bff;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.tech-highlight:hover {
-  background-color: #0056b3;
-}
-
-/* Smooth hover effect for thumbnail */
-.thumbnail-wrapper {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.thumbnail-wrapper:hover {
-  transform: scale(1.05);
-}
-
-/* Subtle hover effect for screenshots */
-.screenshot {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.screenshot:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Ensure animations run smoothly */
-.animate__animated {
-  --animate-duration: 1s;
-}
-</style>
           </div>
         </div>
       </section>
@@ -525,26 +247,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
        
         </div>
         <!-- End Section Title -->
-<div
-  class="col-lg-4 d-flex justify-content-center"
-  style="text-align: center; position: relative;"
->
-  <img
-    src="assets/img/profile-img.jpg"
-    class="img-fluid"
-    alt="Thushan Vithana"
-    style="
-      border: 5px solid transparent;
-      border-radius: 50%;
-      transition: all 0.5s ease-in-out;
-      width: 220px;
-      height: 220px;
-      animation: pulse-border 2s infinite;
-    "
-    onmouseover="this.style.transform='scale(1.1)'; this.style.borderColor='#3498db';"
-    onmouseout="this.style.transform='scale(1)'; this.style.borderColor='transparent';"
-  />
-</div>
+
+        <!-- Animated Profile Section with Liquid Glass & Three.js -->
+        <div class="animated-profile-section">
+          <div class="profile-animation-container">
+            <!-- Three.js Canvas Background -->
+            <canvas id="profile-canvas" class="profile-canvas"></canvas>
+
+            <!-- Profile Image with Liquid Glass Frame -->
+            <div class="profile-glass-frame">
+              <div class="glass-shine"></div>
+              <img
+                src="assets/img/profile-img.jpg"
+                class="profile-animated-img"
+                alt="Thushan Vithana"
+                loading="lazy"
+              />
+              <div class="profile-glow"></div>
+            </div>
+
+            <!-- Profile Info Overlay -->
+            <div class="profile-info-overlay">
+              <h3 class="profile-name-animated">Thushan Vithana</h3>
+              <p class="profile-role-animated">Software Engineer</p>
+              <div class="profile-status">
+                <span class="status-dot"></span>
+                <span class="status-text">Available for opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="container">
           <div class="row">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -758,6 +491,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/android-studio--v2.png"
@@ -765,6 +499,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/tomcat.png"
@@ -772,6 +507,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/visual-studio.png"
@@ -779,6 +515,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/jetbrains.png"
@@ -786,6 +523,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/github.png"
@@ -793,6 +531,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/arduino.png"
@@ -800,6 +539,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/adobe-after-effects--v1.png"
@@ -807,6 +547,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/adobe-lightroom--v1.png"
@@ -814,6 +555,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -822,67 +564,79 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -906,6 +660,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/android-studio--v2.png"
@@ -913,6 +668,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/tomcat.png"
@@ -920,6 +676,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/visual-studio.png"
@@ -927,6 +684,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/jetbrains.png"
@@ -934,6 +692,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/github.png"
@@ -941,6 +700,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/arduino.png"
@@ -948,6 +708,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/adobe-after-effects--v1.png"
@@ -955,6 +716,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/adobe-lightroom--v1.png"
@@ -962,6 +724,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -970,188 +733,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                alt="React"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                alt="Node.js"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-                alt="SQL"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-                alt="Swift"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-                alt="PHP"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-                alt="Kotlin"
-                class="logo"
-              />
-              <img
-                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://img.icons8.com/color/248/000000/android-studio--v2.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://img.icons8.com/color/250/000000/tomcat.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://img.icons8.com/color/248/000000/visual-studio.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://img.icons8.com/color/248/000000/jetbrains.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://img.icons8.com/color/248/000000/github.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://img.icons8.com/color/248/000000/arduino.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://img.icons8.com/color/250/000000/adobe-after-effects--v1.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://img.icons8.com/color/250/000000/adobe-lightroom--v1.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-
-              <img
-                src="https://img.icons8.com/color/248/000000/visual-studio-code-2019.png"
-                alt="postman"
-                width="45"
-                height="45"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                alt="Python"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
-                alt="C"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                alt="Node.js"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-                alt="SQL"
-                class="logo"
-              />
-
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
-                alt="Swift"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-                alt="PHP"
-                class="logo"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
-                alt="Kotlin"
-                class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
@@ -1196,6 +822,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/android-studio--v2.png"
@@ -1203,6 +830,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/tomcat.png"
@@ -1210,6 +838,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/visual-studio.png"
@@ -1217,6 +846,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/jetbrains.png"
@@ -1224,6 +854,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/github.png"
@@ -1231,6 +862,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/arduino.png"
@@ -1238,6 +870,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/adobe-after-effects--v1.png"
@@ -1245,6 +878,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/250/000000/adobe-lightroom--v1.png"
@@ -1252,6 +886,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -1260,43 +895,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
@@ -1341,6 +984,169 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 width="45"
                 height="45"
                 class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/android-studio--v2.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://img.icons8.com/color/250/000000/tomcat.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/visual-studio.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/jetbrains.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/github.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://img.icons8.com/color/248/000000/arduino.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://img.icons8.com/color/250/000000/adobe-after-effects--v1.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://img.icons8.com/color/250/000000/adobe-lightroom--v1.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+
+              <img
+                src="https://img.icons8.com/color/248/000000/visual-studio-code-2019.png"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+                loading="lazy"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+                loading="lazy"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+                loading="lazy"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                alt="React"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                alt="Node.js"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="SQL"
+                class="logo"
+              />
+
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+                alt="Swift"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                alt="PHP"
+                class="logo"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
+                alt="Kotlin"
+                class="logo"
+              />
+              <img
+                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                alt="postman"
+                width="45"
+                height="45"
+                class="logo"
+                loading="lazy"
               />
               <img
                 src="https://img.icons8.com/color/248/000000/android-studio--v2.png"
@@ -1423,61 +1229,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -1499,61 +1316,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -1575,61 +1403,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -1651,61 +1490,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -1727,61 +1577,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -1803,61 +1664,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -1879,61 +1751,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 alt="Python"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
                 alt="Swift"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
                 alt="PHP"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg"
                 alt="Kotlin"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 class="logo"
+                loading="lazy"
               />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
                 alt="C"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 alt="Node.js"
                 class="logo"
+                loading="lazy"
               />
 
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                 alt="SQL"
                 class="logo"
+                loading="lazy"
               />
 
               <img
@@ -2034,38 +1917,53 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   </p>
 </div>
 
-<!-- YouTube Thumbnail and Google Play Button -->
-<div class="row py-3">
-  <div class="col-lg-6">
-   
-
-    <p class="text-center pt-2 animate__animated animate__fadeIn animate__delay-3s">
-      <a
-        href="https://play.google.com/store/apps/details?id=com.thusha2271.scholarships&hl=en"
-        target="_blank"
-        class="btn btn-outline-primary btn-sm"
-      >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-          alt="Get it on Google Play"
-          style="height: 20px; vertical-align: middle; margin-right: 8px;"
-        />
-        Get it on Google Play
-      </a>
-    </p>
+<!-- Google Play Button - Liquid Glass Design -->
+<div class="row py-4">
+  <div class="col-12">
+    <div class="app-download-card animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="app-download-content">
+        <div class="app-icon-wrapper">
+          <i class="bi bi-google-play"></i>
+        </div>
+        <div class="app-download-text">
+          <h5 class="app-download-title">Available on Google Play</h5>
+          <p class="app-download-subtitle">Download the SCOLA Scholarship App</p>
+        </div>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.thusha2271.scholarships&hl=en"
+          target="_blank"
+          class="btn-glass-primary"
+        >
+          <i class="bi bi-download"></i>
+          Download Now
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
-<p class="animate__animated animate__fadeInUp animate__delay-1s">
-  I’ve also worked on diverse projects ranging from mobile app development to
-  web platforms using advanced frameworks like
-  <span class="tech-highlight">React</span>,
-  <span class="tech-highlight">MERN stack</span>, and
-  <span class="tech-highlight">Docker</span>. My approach to solving
-  challenges involves a mix of creativity, teamwork, and a growth mindset. I
-  strive to keep learning new technologies and apply them effectively to
-  deliver high-quality solutions.
-</p>
+<!-- Tech Stack Description - Liquid Glass Design -->
+<div class="tech-description-card animate__animated animate__fadeInUp animate__delay-1s">
+  <p class="tech-description-text">
+    I've also worked on diverse projects ranging from mobile app development to
+    web platforms using advanced frameworks like
+    <span class="tech-badge">
+      <i class="bi bi-layers-fill"></i>
+      React
+    </span>,
+    <span class="tech-badge">
+      <i class="bi bi-stack"></i>
+      MERN stack
+    </span>, and
+    <span class="tech-badge">
+      <i class="bi bi-box-seam"></i>
+      Docker
+    </span>. My approach to solving
+    challenges involves a mix of creativity, teamwork, and a growth mindset. I
+    strive to keep learning new technologies and apply them effectively to
+    deliver high-quality solutions.
+  </p>
+</div>
 
 <!-- Project Photos Section -->
 <div class="row py-3">
@@ -2133,7 +2031,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 <img
                   src="/assets//img/proj/Diabeteice.png"
                   class="img-fluid"
-                  alt=""
+                  alt="SCOLA mobile application"
+                  loading="lazy"
                 />
                 <div class="portfolio-info">
                   <h4>SCOLA mobile application </h4>
@@ -2270,7 +2169,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>AUTOWAG - Vehile Rental System</h4>
+                  <h4>AUTOWAG - Vehicle Rental System</h4>
                   <a
                     href="AUTOWAG-project.html"
                     title="More Details"
@@ -2326,7 +2225,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 <div class="portfolio-info">
                   <h4>Simple Portfolio</h4>
                   <a
-                    href="simple -project.html"
+                    href="simple-project.html"
                     title="More Details"
                     class="details-link"
                     ><i class="bi bi-link-45deg custom-icon"></i>
@@ -2432,7 +2331,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>NEXT JS Portfolio</h4>
+                  <h4>Next.js Portfolio</h4>
                   <a
                     href="next-project.html"
                     title="More Details"
@@ -2618,7 +2517,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Swift UI</h4>
+                  <h4>SwiftUI</h4>
                   <a
                     href="swiftUi-project.html"
                     title="More Details"
@@ -2959,7 +2858,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 <p>
                   Developing tailored software solutions across multiple
                   programming languages and frameworks. Expertise in Java,
-                  Python
+                  Python, JavaScript, and modern development technologies.
                   <a href="service-details.html" class="stretched-link"></a>
                 </p>
               </div>
@@ -3126,22 +3025,90 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
+    <!-- Chatbot - Liquid Glass Design -->
+    <div id="chatbot-container" class="chatbot-container">
+      <!-- Chat Window -->
+      <div id="chat-window" class="chat-window">
+        <!-- Chat Header -->
+        <div class="chat-header">
+          <div class="chat-header-content">
+            <div class="chat-avatar">
+              <i class="bi bi-robot"></i>
+            </div>
+            <div class="chat-header-text">
+              <h4>Portfolio Assistant</h4>
+              <span class="chat-status">Online</span>
+            </div>
+          </div>
+          <button id="close-chat" class="close-chat-btn">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <!-- Chat Messages -->
+        <div id="chat-messages" class="chat-messages">
+          <div class="chat-message bot-message">
+            <div class="message-avatar">
+              <i class="bi bi-robot"></i>
+            </div>
+            <div class="message-content">
+              <p>Hi! I'm Thushan's Portfolio Assistant. How can I help you today?</p>
+              <span class="message-time">Just now</span>
+            </div>
+          </div>
+          <!-- Quick suggestions -->
+          <div class="quick-suggestions">
+            <button class="suggestion-btn" data-question="Who is Thushan?">Who is Thushan?</button>
+            <button class="suggestion-btn" data-question="What are his skills?">What skills?</button>
+            <button class="suggestion-btn" data-question="Show projects">View projects</button>
+            <button class="suggestion-btn" data-question="Contact info">Contact info</button>
+          </div>
+        </div>
+
+        <!-- Chat Input -->
+        <div class="chat-input-container">
+          <input
+            type="text"
+            id="chat-input"
+            class="chat-input"
+            placeholder="Ask me anything..."
+            autocomplete="off"
+          />
+          <button id="send-message" class="send-btn">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Chat Toggle Button -->
+      <button id="chat-toggle" class="chat-toggle">
+        <i class="bi bi-chat-dots-fill"></i>
+        <span class="chat-badge">1</span>
+      </button>
+    </div>
+
     <!-- Preloader -->
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/vendor/php-email-form/validate.js" defer></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+    <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- Three.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+    <!-- Three.js Profile Animation -->
+    <script src="assets/js/profile-animation.js" defer></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
